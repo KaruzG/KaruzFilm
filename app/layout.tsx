@@ -1,8 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-
-const inter = Inter({ subsets: ["latin"] })
+import { anonymousPro } from "../fonts/fonts"
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -16,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={anonymousPro.className + " bg-background text-text-primary"}>
         {children}
       </body>
     </html>

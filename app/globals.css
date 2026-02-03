@@ -1,1 +1,29 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+:root {
+    --background: #1E201E;
+    --background-100: #3C3D37;
+    --text-primary: #A1927B;
+    --accent: #ECDFCC;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-background-100: var(--background-100);
+    --color-text-primary: var(--text-primary);
+    --color-accent: var(--accent);
+}
+
+@layer components {
+    .underline-after {
+        @apply relative
+        after:content-['']
+        after:absolute
+        after:bottom-0
+        after:left-1/2
+        after:-translate-x-1/2
+        after:w-[90dvw]
+        after:h-px
+        after:bg-background-100;
+  }
+}
