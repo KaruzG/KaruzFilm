@@ -26,4 +26,16 @@
         after:h-px
         after:bg-background-100;
   }
+
+      .underline-before {
+        @apply relative
+        before:content-['']
+        before:absolute
+        before:top-0
+        before:left-1/2
+        before:-translate-x-1/2
+        before:w-[90dvw]
+        before:h-px
+        before:bg-background-100;
+  }
 }
